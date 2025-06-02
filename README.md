@@ -55,6 +55,19 @@ In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using o
 
 ---
 
-## 📁 Folder Structure
+## 📘 What I Learned
+
+- How to create secure AWS networking environments from scratch
+- The difference between **stateful (Security Groups)** and **stateless (NACLs)** firewalls
+- Best practices for subnet segmentation and bastion host setups
+- Basics of logging and monitoring cloud network traffic
+- Practical cloud security principles using **only the Free Tier**
+
+---
+
+## 📌 Tags
+
+`#AWS` `#CloudSecurity` `#VPC`  `#FreeTier` `#EC2` `#GuardDuty` `#FlowLogs` `#Networking`
+
 
 
