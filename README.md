@@ -1,7 +1,7 @@
 
 # 🔐 Secure AWS VPC Architecture 
 
-In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using only **free-tier resources**. The architecture includes **segmented public and private subnets**, strict access controls using **Security Groups and Network ACLs (NACLs)**. For enhanced security monitoring, I walso enabled AWS GuardDuty for threat detection and set up CloudWatch to monitor EC2 instance metrics and logs. These services help detect unusual behavior and maintain visibility into the environment.
+In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using only **free-tier resources**. The architecture includes **segmented public and private subnets**, strict access controls using **Security Groups and Network ACLs (NACLs)**. For enhanced security monitoring, I also enabled AWS GuardDuty for threat detection and set up CloudWatch to monitor EC2 instance metrics and logs. These services help detect unusual behavior and maintain visibility into the environment.
 
 ---
 
@@ -9,7 +9,7 @@ In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using o
 
 - ✅ Custom VPC (`10.0.0.0/16`)
 - ✅ Public Subnet: Public Host EC2 (SSH entry point)
-- ✅ Private Subnet: Private Instance EC2 (only accessible from bastion)
+- ✅ Private Subnet: Private Instance EC2 (only accessible from public host)
 - ✅ Internet Gateway (for outbound access from public subnet)
 - ✅ Route Tables for subnet separation
 - ✅ Security Groups and NACLs for controlled traffic flow
@@ -42,13 +42,12 @@ In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using o
 
 ---
 
-## 📸 Suggested Screenshots to Include
+## 📸 Screenshots Included
 
 > These prove setup and can be added in a `screenshots/` folder or inline in the README:
 
-- ✅ VPC/subnet layout diagram from AWS Console
-- ✅ Bastion SSH session (from local terminal)
-- ✅ SSH from bastion → private EC2
+- ✅ VPC/subnet layout diagram from AWS Consoler
+- ✅ Subnet routes
 - ✅ NACL rule configuration
 - ✅ Security Group rules
 - ✅ Sample VPC Flow Logs from CloudWatch
@@ -61,7 +60,7 @@ In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using o
 - The difference between **stateful (Security Groups)** and **stateless (NACLs)** firewalls
 - Best practices for subnet segmentation and bastion host setups
 - Basics of logging and monitoring cloud network traffic
-- Practical cloud security principles using **only the Free Tier**
+- Practical cloud security principles 
 
 ---
 
