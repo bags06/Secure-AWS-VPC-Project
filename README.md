@@ -44,8 +44,6 @@ In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using o
 
 ## 📸 Screenshots Included
 
-> These prove setup and can be added in a `screenshots/` folder or inline in the README:
-
 - ✅ VPC/subnet layout diagram from AWS Consoler
 - ✅ Subnet routes
 - ✅ NACL rule configuration
@@ -61,7 +59,7 @@ In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using o
 - Best practices for subnet segmentation and public host setups
 - Basics of logging and monitoring cloud network traffic
 - Practical cloud security principles
-- 🧭 How routing works in the cloud, including:
+- How routing works in the cloud, including:
      - Configuring route tables for public/private subnets
      - Using Internet Gateways for public access
      - Isolating private instances from external traffic
