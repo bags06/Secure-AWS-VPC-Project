@@ -58,9 +58,14 @@ In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using o
 
 - How to create secure AWS networking environments from scratch
 - The difference between **stateful (Security Groups)** and **stateless (NACLs)** firewalls
-- Best practices for subnet segmentation and bastion host setups
+- Best practices for subnet segmentation and public host setups
 - Basics of logging and monitoring cloud network traffic
-- Practical cloud security principles 
+- Practical cloud security principles
+- 🧭 How routing works in the cloud, including:
+     - Configuring route tables for public/private subnets
+     - Using Internet Gateways for public access
+     - Isolating private instances from external traffic
+
 
 ---
 
