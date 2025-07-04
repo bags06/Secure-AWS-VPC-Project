@@ -1,5 +1,5 @@
 
-# 🔐 Secure AWS VPC Architecture 
+#  Secure AWS VPC Architecture 
 
 In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using only **free-tier resources**. The architecture includes **segmented public and private subnets**, strict access controls using **Security Groups and Network ACLs (NACLs)**. For enhanced security monitoring, I also enabled AWS GuardDuty for threat detection and set up CloudWatch to monitor EC2 instance metrics and logs. These services help detect unusual behavior and maintain visibility into the environment.
 
@@ -7,14 +7,14 @@ In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using o
 
 ## 🌐 Architecture Overview
 
-- ✅ Custom VPC (`10.0.0.0/16`)
-- ✅ Public Subnet: Public Host EC2 (SSH entry point)
-- ✅ Private Subnet: Private Instance EC2 (only accessible from public host)
-- ✅ Internet Gateway (for outbound access from public subnet)
-- ✅ Route Tables for subnet separation
-- ✅ Security Groups and NACLs for controlled traffic flow
-- ✅ VPC Flow Logs configured (via CloudWatch Logs)
-- ✅ GuardDuty enabled for threat detection 
+-  Custom VPC (`10.0.0.0/16`)
+-  Public Subnet: Public Host EC2 (SSH entry point)
+-  Private Subnet: Private Instance EC2 (only accessible from public host)
+-  Internet Gateway (for outbound access from public subnet)
+-  Route Tables for subnet separation
+-  Security Groups and NACLs for controlled traffic flow
+-  VPC Flow Logs configured (via CloudWatch Logs)
+-  GuardDuty enabled for threat detection 
 
 ---
 
@@ -34,25 +34,25 @@ In this project I  build a **secure Virtual Private Cloud (VPC)** on AWS using o
 
 ## 🔐 Security Measures
 
-- 🔒 **Public EC2** allows SSH only from my IP address
-- 🔒 **Private EC2** is not publicly accessible; only the public host instance can connect via SSH
-- 🔒 **NACLs** block all unnecessary traffic to/from both subnets
-- 🔍 **VPC Flow Logs** provide traffic visibility via CloudWatch Logs
-- 🛡️ **GuardDuty** enables passive threat detection 
+-  **Public EC2** allows SSH only from my IP address
+-  **Private EC2** is not publicly accessible; only the public host instance can connect via SSH
+-  **NACLs** block all unnecessary traffic to/from both subnets
+-  **VPC Flow Logs** provide traffic visibility via CloudWatch Logs
+-  **GuardDuty** enables passive threat detection 
 
 ---
 
-## 📸 Screenshots Included
+## Screenshots Included
 
-- ✅ VPC/subnet layout diagram from AWS Consoler
-- ✅ Subnet routes
-- ✅ NACL rule configuration
-- ✅ Security Group rules
-- ✅ Sample VPC Flow Logs from CloudWatch
+-  VPC/subnet layout diagram from AWS Consoler
+-  Subnet routes
+-  NACL rule configuration
+-  Security Group rules
+-  Sample VPC Flow Logs from CloudWatch
 
 ---
 
-## 📘 What I Learned
+## Key Learnings
 
 - How to create secure AWS networking environments from scratch
 - The difference between **stateful (Security Groups)** and **stateless (NACLs)** firewalls
